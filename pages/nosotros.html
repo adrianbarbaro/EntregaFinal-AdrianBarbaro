@@ -9,40 +9,36 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../css/style.css">
 </head>
-<body class="conteiner-fluid">
+<body class="container-fluid">
     <header>
-        <nav class="navegador">
-            <a href="../index.html"><img class="logo" src="../multimedia/img/logo.png" alt=""></a>
+        <nav class="navegador position-fixed d-flex justify-content-between">
+            <a href="./index.html"><img class="logo p-1" src="./multimedia/img/logo.png" alt=""></a>
             <i class="fa-sharp fa-solid fa-bars"></i>
-            <ul>
-                <li><a class="link" href="../index.html">Inicio</a></li>
-                <li><a class="link" href="./nosotros.html">Nosotros</a></li>
-                <li><a class="link" href="./contacto.html">Contacto</a></li>
-                <li><a class="link" href="./ofertas.html">Ofertas!</a></li>
-                <li><button><a class="link-pedidos" href="./sistema-de-pedidos.html">sistema de pedidos</a></button></li>
+            <ul class="d-flex flex-direction-row align-items-center">
+                <li><a class="link px-2" href="./index.html">Inicio</a></li>
+                <li><a class="link px-2" href="./pages/nosotros.html">Nosotros</a></li>
+                <li><a class="link px-2" href="./pages/contacto.html">Contacto</a></li>
+                <li><a class="link px-2" href="./pages/ofertas.html">Ofertas!</a></li>
+                <li><button class="m-1 mb-0"><a class="link-pedidos" href="./pages/sistema-de-pedidos.html">Sistema de pedidos</a></button></li>
             </ul>
         </nav>
     </header>
     <main>
-        <div class="nosotros row m-auto">
-            <div class="col-12 col-md-6 align-items-center p-2 mt-5">
+        <div class="nosotros row m-auto d-flex mt-5 g-3">
+            <div class="col-12 col-lg-6 mt-2">
                 <h2>La empresa</h2>
-                <p>Su actividad principal consiste en la comercialización y distribución de especialidades medicinales, productos médicos, cosméticos y alimentos. 
+                <p class="m-0">Su actividad principal consiste en la comercialización y distribución de especialidades medicinales, productos médicos, cosméticos y alimentos. 
                 Se destaca por brindar un trato profesional y personalizado, ejerciendo un rol social y asegurando la disponibilidad de artículos en farmacias, sanatorios y agentes de la salud habilitados.
                 A través de una moderna fldota de transportes propios y de servicios contratados, 
                 Farmawep S.A. garantiza la distribución, desde el punto mayorista hasta el minorista, llegando en tiempo y forma a todos sus clientes.
                 </p>
             </div>
-            <div class="img1 col-12 col-md-6 p-2 mt-5">
-                <img src="../multimedia/img/la empresa.jpg" alt="la empresa">
+            <div class="img1 col-12 col-lg-6 mt-4">
+                <img class="img-fluid" src="../multimedia/img/la empresa.jpg" alt="la empresa">
             </div>
-            
-            <div class="img2 col-12 col-md-6 p-2">
-                <img src="../multimedia/img/valores.jpeg" alt="valores">
-            </div>
-            <div class="col-12 col-md-6 p-2">
+             <div class="col-12 col-lg-6">
                 <h2>Valores</h2>
-                <p>La búsqueda constante de la superación de estándares que sostengan nuestro liderazgo, como referentes del mercado. 
+                <p class="m-0">La búsqueda constante de la superación de estándares que sostengan nuestro liderazgo, como referentes del mercado. 
                     Anticipar, crear y capitalizar las oportunidades para generar crecimiento. La constante conciencia de crear valor para todos los recursos, 
                     entender sus necesidades y desarrollar rápidamente soluciones profesionales. Trabajar e interactuar con otros en pos de alcanzar nuestros objetivos. 
                     La habilidad de cooperar con el desempeño de los demás y ser parte de su desarrollo, para que logren superar sus metas. Capacidad para establecer y mantener 
@@ -50,15 +46,18 @@
                     integrantes del sector de la salud.
                 </p>
             </div>
-            <div class="col-12 col-md-6 p-2">
+            <div class="img2 col-12 col-lg-6">
+                <img class="img-fluid" src="../multimedia/img/valores.jpeg" alt="valores">
+            </div>
+            <div class="col-12 col-lg-6">
                 <h2>Compromiso</h2>
-                <p>Para poder controlar exigencias específicas que demandan ciertos productos, también cuenta con un sistema de conservación que, basado en la más avanzada tecnología, permite mantener medicamentos bajo frío permanente. 
+                <p class="m-0">Para poder controlar exigencias específicas que demandan ciertos productos, también cuenta con un sistema de conservación que, basado en la más avanzada tecnología, permite mantener medicamentos bajo frío permanente. 
                     Para ello la empresa ha sumado a su gran instalación, cámaras frigoríficas propias que permiten el correcto almacenamiento de este tipo de productos, y ha tomado como medidas de prevención, un control constante de la temperatura y la humedad. 
                     La instalación de auto generadores de energía eléctrica, así como la implementación de modernas técnicas de empaque térmico para el traslado al cliente, aseguran una cadena de frío perfecta y continúa para los productos comercializados.
                 </p>
             </div>
-            <div class="img3 col-12 col-md-6 p-2">
-                <img src="../multimedia/img/compromiso.jpg" alt="compromiso">
+            <div class="img3 col-12 col-lg-6 mb-5">
+                <img class="img-fluid" src="../multimedia/img/compromiso.jpg" alt="compromiso">
             </div>
         </div>
     </main>

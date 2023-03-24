@@ -1,9 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Gajraj+One&family=Tilt+Warp&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+.row, .container-fluid{
+    margin: 0;
+    padding: 0;
+}
+
+
 
 /* cuerpo*/
 body{
@@ -27,28 +34,18 @@ body{
 
 /*navegador */
 .logo{
-    height: 60px;
-    width: 60px;
-    padding: 5px;
+    height: 50px;
+    width: 50px;
 }
 
 .navegador{
     background-color: #00E399;
     width: 100%;
-    top: 0%;
-    position: fixed;
-    display: flex;
-    justify-content: space-between;
-    padding-left: 10px;
-    padding-right: 10px;
+    top: 0;
 }
 
 .navegador ul{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
     list-style: none;
-    gap: 40px;
     transition: 0.5s;
 }
 
@@ -88,11 +85,9 @@ body{
     
     .navegador .fa-bars{
         display: block;
-        font-size: 50px;
+        font-size: 40px;
         color: black;
-        padding: 5px;
-
-        justify-content: center;
+        padding: 10px;
     }
 
     .navegador .fa-bars:hover + ul{
@@ -153,12 +148,16 @@ h3{
     font-size: 20px;
 }
 
+h4{
+    font-size: 20px;
+}
+
 p{
     font-size: 16px;
     text-align: justify;
 }
 
-@media(max-width:700px){
+@media(max-width:768px){
     .titulo{
     display: flex;
     flex-wrap: wrap;
@@ -168,18 +167,30 @@ p{
 /*fin titulos y parrafos*/
 
 /*nosotros*/
-/*
-.nosotros div{
-    width: 600px;
-    height: 300px;
-}
-
-.nosotros div img{
-    width: 600px;
-    height: 300px;
-}
-
 .nosotros{
+    width: 1200px;
+}
+@media(min-width:992px){
+    .nosotros div:nth-child(1){
+        order:1;
+    }
+    .nosotros div:nth-child(2){
+        order:2;
+    }
+    .nosotros div:nth-child(3){
+        order:4;
+    }
+    .nosotros div:nth-child(4){
+        order:3;
+    }
+    .nosotros div:nth-child(5){
+        order:5;
+    }
+    .nosotros div:nth-child(6){
+        order:6;
+    }
+}
+/*.nosotros{
     gap: 20px;
     width: 1200px;
     margin: auto;
@@ -238,11 +249,6 @@ p{
         width: 100%;
     }
 }*/
-
-.nosotros{
-    width: 1300px;
-}
-
 
 /*fin nosotros*/
 
@@ -321,6 +327,9 @@ p{
     flex-direction: row;
     justify-content: space-between;
     margin-top: 10px;
+}
+.contacto p{
+    margin: 0;
 }
 
 @media(max-width:1000px){

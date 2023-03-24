@@ -9,17 +9,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../css/style.css">
 </head>
-<body>
+<body class="container-fluid">
     <header>
-        <nav class="navegador">
-            <a href="../index.html"><img class="logo" src="../multimedia/img/logo.png" alt=""></a>
+        <nav class="navegador position-fixed d-flex justify-content-between">
+            <a href="./index.html"><img class="logo p-1" src="./multimedia/img/logo.png" alt=""></a>
             <i class="fa-sharp fa-solid fa-bars"></i>
-            <ul>
-                <li><a class="link" href="../index.html">Inicio</a></li>
-                <li><a class="link" href="./nosotros.html">Nosotros</a></li>
-                <li><a class="link" href="./contacto.html">Contacto</a></li>
-                <li><a class="link" href="./ofertas.html">Ofertas!</a></li>
-                <li><button><a class="link-pedidos" href="./sistema-de-pedidos.html">sistema de pedidos</a></button></li>
+            <ul class="d-flex flex-direction-row align-items-center">
+                <li><a class="link px-2" href="./index.html">Inicio</a></li>
+                <li><a class="link px-2" href="./pages/nosotros.html">Nosotros</a></li>
+                <li><a class="link px-2" href="./pages/contacto.html">Contacto</a></li>
+                <li><a class="link px-2" href="./pages/ofertas.html">Ofertas!</a></li>
+                <li><button class="m-1 mb-0"><a class="link-pedidos" href="./pages/sistema-de-pedidos.html">Sistema de pedidos</a></button></li>
             </ul>
         </nav>
     </header>
