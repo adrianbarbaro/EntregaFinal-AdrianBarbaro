@@ -10,8 +10,6 @@
     padding: 0;
 }
 
-
-
 /* cuerpo*/
 body{
     background-color: #ffffff;
@@ -42,6 +40,7 @@ body{
     background-color: #00E399;
     width: 100%;
     top: 0;
+    z-index: 1;
 }
 
 .navegador ul{
@@ -59,7 +58,6 @@ body{
     background-color: #053EB3;
     border-radius: 5px;
     border: #053EB3;
-    padding: 5px;
     transition: 1s;
 }
 .navegador .link-pedidos{
@@ -77,11 +75,15 @@ body{
     color: #053EB3;
 }
 
+.link:hover{
+    font-size: 17px;
+}
+
 .navegador .fa-bars{
     display:none;
 }
 
-@media(max-width:768px) {
+@media(max-width:576px) {
     
     .navegador .fa-bars{
         display: block;
@@ -96,29 +98,12 @@ body{
     .navegador ul:hover{
         right: 0px;
     }
-
-    .navegador{
-        z-index: 1;
-    }
     .navegador ul{
         position: fixed;
         background-color: #00E399;
-        width: 200px;
         height: 100vh;
-        top: 0%;
-        gap: 0;
-        flex-direction: column;
-        justify-content: start;
-        align-items: start;
+        top: 0;
         right: -200px;
-    }
-    .navegador ul li{
-        padding-top: 30px;
-        padding-left: 10px;
-    }
-    .navegador ul li a{
-        padding: 0%;
-        font-size: 16px;
     }
 }
 /*fin navegador */
@@ -138,13 +123,11 @@ body{
 h2{
     color: #053EB3;
     font-size: 30px;
-    font-weight: bold;
     text-align: center;
 }
 
 h3{
     color: #053EB3;
-    font-weight: bold;
     font-size: 20px;
 }
 
@@ -159,9 +142,10 @@ p{
 
 @media(max-width:768px){
     .titulo{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column; 
+        font-size: 100px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column; 
     }
 }
 /*fin titulos y parrafos*/
@@ -190,7 +174,15 @@ p{
         order:6;
     }
 }
-/*.nosotros{
+@media(max-width:992px){
+    .nosotros{
+        width: 100%;
+    }
+}
+
+/*nosotros
+lo pase a bootstrap despues elijo uno
+.nosotros{
     gap: 20px;
     width: 1200px;
     margin: auto;
@@ -362,7 +354,6 @@ p{
 /*fin contacto*/
 
 /*ofertas*/
-
 .carousel{
     margin: auto;
     margin-top: 80px;
@@ -388,23 +379,18 @@ p{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
 }
 /*fin sist de pedidos*/
 
 /*pie*/
 .pie{
     background-color: #00E399;
-    position:fixed;
     width: 100%;
     bottom: 0%;
 }
 
 .pie ul{
     list-style: none;
-    display: flex;
-    justify-content: end;
-    flex-wrap: wrap;
     font-size: 12px;
 }
 /*fin pie*/
