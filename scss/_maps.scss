@@ -1,0 +1,11 @@
+@mixin boton{
+    border-radius: 5px;
+    padding: 5px;
+    width: 150px;
+    border: outset;
+}
+
+@mixin sizes($width, $height){
+    width: $width;
+    height: $height;
+}

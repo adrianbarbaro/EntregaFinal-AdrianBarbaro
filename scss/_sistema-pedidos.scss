@@ -1,0 +1,52 @@
+
+.sistema-de-pedidos{
+    @include sizes(400px, 300px);
+    margin: auto;
+    margin-top: 200px;
+    background-color: $color-sec;
+    box-shadow:10px 10px 25px 5px $color-sec;
+    div{
+        h3{
+            color: $color-ter;
+            text-align: center;
+        }
+        .login{
+            width: 100%;
+            border: none;
+            padding: 10px;
+        }
+        .submit{
+            @include boton;
+        }
+        a{
+            color: $color-ter;
+            text-decoration: none;
+            margin-top: 40px;
+            text-align: center;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+
+    }
+}
+@media(max-width:576px){
+    .sistema-de-pedidos{
+        width: 100%;
+        background-color: inherit;
+        box-shadow: none;
+        div{
+            h3{
+                color: $color-sec;
+            }
+            .login{
+                border-bottom: $color-sec solid;
+            }
+            a{
+                color: $color-sec;
+            }
+        }
+        
+    }
+    
+}

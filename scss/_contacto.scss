@@ -1,0 +1,47 @@
+.contacto-portada{
+    margin: auto;
+    @include sizes(1000px, 400px);
+    img{
+        @include sizes(100%, 400px);
+    }
+}
+.contacto{
+    p{
+        text-align: center;
+    }
+    .informacion{
+        width: 400px;
+        .fa{
+            color: $color-sec;
+            font-size: 30px;
+        }
+        .ubicacion{
+            border-bottom: $color-pri solid 1px;
+        }
+    }
+    .formulario{
+        width: 400px;
+        form{
+            input{
+                padding: 10px;
+            }
+            button{
+                @include boton;
+            }
+    
+        }
+       
+    }
+    
+}
+
+@media(max-width:1000px){
+    
+    .contacto-portada{
+        @include sizes(100%, 250px);
+        img{
+            height: 250px;
+        }
+        
+    }
+}

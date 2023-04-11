@@ -1,0 +1,71 @@
+.navegador{
+    background-color: $color-pri;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+    .logo{
+        @include sizes(50px, 50px);
+    }
+    a{
+        text-decoration: none;
+    }
+    .fa-bars{
+        display:none;
+    }
+    ul{
+        list-style: none;
+        transition: 0.5s;
+        .link{
+            color:$color-sec;
+            font-size: 16px;
+            text-decoration: none;
+            &:hover{
+                font-size: 17px;
+            }
+        }
+        button{
+            background-color: $color-sec;
+            border-radius: 5px;
+            border: $color-sec;
+            transition: 1s;
+            &:hover{
+                background-color: $color-ter;
+            }
+        }
+        .link-pedidos{
+            color: $color-pri;
+            font-size: 16px;
+            text-decoration: none;
+            &:hover{
+                color: $color-sec;
+            }
+        }
+    }
+}
+
+@media(max-width:576px){
+    .navegador{
+        ul{
+            position: fixed;
+            background-color: $color-pri;
+            height: 100vh;
+            top: 0;
+            right: -200px;
+            &:hover{
+                right: 0px;
+            }
+            .link{
+                margin: 20px;
+            }
+        }
+        .fa-bars{
+            display: block;
+            font-size: 40px;
+            color: $color-sec;
+            &:hover + ul{
+                right: 0px;
+            }
+
+        }
+    }
+}

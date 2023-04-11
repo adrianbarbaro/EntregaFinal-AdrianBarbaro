@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>farmawep</title>
+    <link rel="shortcut icon" href="../multimedia/img/logo.png" type="image/x-icon">
+    <title>FARMAWEB, login</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../css/style.css">
@@ -12,9 +13,9 @@
 <body class="container-fluid">  
     <header>
         <nav class="navegador position-fixed d-flex justify-content-between m-0">
-            <a href="../index.html"><img class="logo p-1" src="../multimedia/img/logo.png" alt=""></a>
-            <i class="fa-sharp fa-solid fa-bars"></i>
-            <ul class="d-flex flex-column align-items-end flex-sm-row align-items-sm-center m-0 p-0">
+            <a href="../index.html"><img class="logo p-1" src="../multimedia/img/logo.png" alt="">FARMAWEB</a>
+            <i class="fa-sharp fa-solid fa-bars p-1"></i>
+            <ul class="d-flex flex-column align-items-center flex-sm-row align-items-sm-center m-0 p-0">
                 <li><a class="link d-block p-2" href="../index.html">Inicio</a></li>
                 <li><a class="link d-block p-2" href="./nosotros.html">Nosotros</a></li>
                 <li><a class="link d-block p-2" href="./contacto.html">Contacto</a></li>
@@ -24,19 +25,20 @@
         </nav>
     </header>
     <main>
-        <div class="login">
-            <div><h2>Sistema de Pedidos</h2></div>
-            <div>
-                <input type="email" name="mail"placeholder="users" required>
-                <input type="password" name="pasword"placeholder="pasword" required>
-                <input type="submit" value="login">
+        <div id="login" class="sistema-de-pedidos">
+            <div class="d-flex flex-column align-items-center p-4 m-5">
+                <h3>Sistema de Pedidos</h3>
+                <input class="login m-2" type="email" name="mail"placeholder="usuario" required>
+                <input class="login m-2" type="password" name="pasword"placeholder="contraseña" required>
+                <input class="submit m-2" type="submit" value="ingresar">
+                <a href="">¿Olvido su usuario o contraseña?</a>
             </div>
         </div>
     </main>
     <footer>
         <div class="pie d-flex position-fixed justify-content-end">
             <ul class="m-0">
-                <li>©2023 FarmaWeb. Todos los derechos reservados.</li>
+                <li>©2001 FarmaWeb. Todos los derechos reservados.</li>
             </ul>
         </div> 
     </footer>

@@ -1,0 +1,35 @@
+.nosotros{
+    width: 1200px;
+}
+@media(min-width:992px){
+    .nosotros div:nth-child(1){
+        order:1;
+    }
+    .nosotros div:nth-child(2){
+        order:2;
+    }
+    .nosotros div:nth-child(3){
+        order:4;
+    }
+    .nosotros div:nth-child(4){
+        order:3;
+    }
+    .nosotros div:nth-child(5){
+        order:5;
+    }
+    .nosotros div:nth-child(6){
+        order:6;
+    }
+}
+
+@media(max-width:992px){
+    .nosotros{
+        width: 100%;
+    }
+}
+
+@media(max-width:576px){
+    .nosotros p{
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,30 @@
+.titulo{
+    text-align: center;
+    font-size: 120px;
+    color: $color-sec;
+    span{
+        font-family: $font-sec;
+        color: $color-pri;
+        font-size: 120px;
+    }
+}
+
+h2{
+    color: $color-sec;
+    font-size: 30px;
+    text-align: center;
+}
+
+h3{
+    color: $color-sec;
+    font-size: 20px;
+}
+
+h4{
+    font-size: 20px;
+}
+
+p{
+    font-size: 16px;
+    text-align: justify;
+}
