@@ -2,7 +2,7 @@
 .sistema-de-pedidos{
     @include sizes(400px, 300px);
     margin: auto;
-    margin-top: 200px;
+    margin-top: 150px;
     background-color: $color-sec;
     box-shadow:10px 10px 25px 5px $color-sec;
     div{
@@ -40,7 +40,7 @@
                 color: $color-sec;
             }
             .login{
-                border-bottom: $color-sec solid;
+                border: $color-sec solid 2px;
             }
             a{
                 color: $color-sec;

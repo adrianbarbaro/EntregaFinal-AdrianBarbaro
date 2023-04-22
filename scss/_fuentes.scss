@@ -1,6 +1,7 @@
 .titulo{
     text-align: center;
     font-size: 120px;
+    font-family: $font-ter;
     color: $color-sec;
     span{
         font-family: $font-sec;
@@ -13,18 +14,22 @@ h2{
     color: $color-sec;
     font-size: 30px;
     text-align: center;
+    font-weight: bold;
 }
 
 h3{
     color: $color-sec;
     font-size: 20px;
+    font-weight: bold
 }
 
 h4{
     font-size: 20px;
+    font-weight: bold;
 }
 
 p{
     font-size: 16px;
     text-align: justify;
+    margin: 0;
 }

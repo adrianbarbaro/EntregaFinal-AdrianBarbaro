@@ -1,9 +1,17 @@
-.pie{
-    background-color: $color-pri;
-    width: 100%;
-    bottom: 0%;
-    ul{
-        list-style: none;
-        font-size: 12px;
+footer{
+    margin-top: auto;
+    .pie{
+        background-color: $color-sec;
+        div{
+            gap: 5px;
+            i{
+                color: $color-pri;
+            
+            }
+            p{
+                color: $color-ter;
+            }
+        }
     }
 }
+
